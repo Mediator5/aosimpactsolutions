@@ -84,8 +84,8 @@ export default function Navbar() {
           {/* ── Logo ── */}
           <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             {/* Replace src with real logo once provided */}
-            {/* <Image src="/logo.png" alt="AOS Impact Solutions" width={140} height={40} priority /> */}
-            <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
+            <Image src="/logo.avif" alt="AOS Impact Solutions" width={140} height={60} priority />
+            {/* <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
               <span
                 style={{
                   fontFamily: 'var(--font-heading)',
@@ -112,7 +112,7 @@ export default function Navbar() {
               >
                 Impact Solutions
               </span>
-            </span>
+            </span> */}
           </Link>
 
           {/* ── Desktop Nav ── */}
