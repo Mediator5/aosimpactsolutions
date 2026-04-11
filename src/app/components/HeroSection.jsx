@@ -17,7 +17,7 @@ export default function HeroSection() {
         position: 'absolute', inset: 0,
         backgroundImage: 'url(https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1800&q=80&auto=format&fit=crop)',
         backgroundSize: 'cover', backgroundPosition: 'center 40%',
-        opacity: 0.18, filter: 'saturate(0.6)', transform: 'scale(1.04)', pointerEvents: 'none',
+        opacity: 0.7, filter: 'saturate(0.6)', transform: 'scale(1.04)', pointerEvents: 'none',
       }} />
       <div style={{
         position: 'absolute', inset: 0,
