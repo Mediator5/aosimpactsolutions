@@ -60,13 +60,13 @@ export default function Navbar() {
           zIndex: 1000,
           transition: 'all 0.4s ease',
           background: scrolled
-            ? 'rgba(8, 8, 8, 0.97)'
-            : 'linear-gradient(180deg, rgba(8,8,8,0.85) 0%, transparent 100%)',
+            ? 'rgba(255, 255, 255, 0.97)'
+            : 'linear-gradient(180deg, rgba(255,255,255,0.85) 0%, transparent 100%)',
           backdropFilter: scrolled ? 'blur(12px)' : 'none',
           borderBottom: scrolled
-            ? '1px solid rgba(201,168,76,0.15)'
+            ? '1px solid rgba(5,90,103,0.15)'
             : '1px solid transparent',
-          boxShadow: scrolled ? '0 4px 30px rgba(0,0,0,0.5)' : 'none',
+          boxShadow: scrolled ? '0 4px 30px rgba(5,90,103,0.10)' : 'none',
         }}
       >
         <div
@@ -84,14 +84,14 @@ export default function Navbar() {
           {/* ── Logo ── */}
           <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             {/* Replace src with real logo once provided */}
-            <Image src="/logo.avif" alt="AOS Impact Solutions" width={140} height={60} priority />
+            <Image src="/logo2.jpeg" alt="AOS Impact Solutions" width={110} height={60} priority />
             {/* <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
               <span
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontSize: '1.5rem',
                   fontWeight: 600,
-                  background: 'linear-gradient(135deg, #E2C27D 0%, #C9A84C 50%, #A07C2D 100%)',
+                  background: 'linear-gradient(135deg, #F8CE60 0%, #DC9F25 50%, #055A67 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -103,7 +103,7 @@ export default function Navbar() {
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: '0.55rem',
+                  fontSize: '0.7rem',
                   fontWeight: 600,
                   letterSpacing: '0.22em',
                   textTransform: 'uppercase',
@@ -135,10 +135,10 @@ export default function Navbar() {
                       fontWeight: 500,
                       letterSpacing: '0.1em',
                       textTransform: 'uppercase',
-                      color: dropdownOpen ? 'var(--color-gold)' : 'var(--color-muted-light)',
+                      color: dropdownOpen ? 'var(--color-teal-dark)' : 'var(--color-muted-light)',
                       transition: 'color 0.3s ease',
                     }}
-                    onMouseEnter={(e) => { if (!dropdownOpen) e.currentTarget.style.color = 'var(--color-white)' }}
+                    onMouseEnter={(e) => { if (!dropdownOpen) e.currentTarget.style.color = 'var(--color-teal)' }}
                     onMouseLeave={(e) => { if (!dropdownOpen) e.currentTarget.style.color = 'var(--color-muted-light)' }}
                   >
                     {link.label}
@@ -163,9 +163,9 @@ export default function Navbar() {
                       transform: 'translateX(-50%)',
                       width: '240px',
                       background: 'var(--color-surface-2)',
-                      border: '1px solid rgba(201,168,76,0.2)',
+                      border: '1px solid rgba(5,90,103,0.20)',
                       borderRadius: 'var(--radius-md)',
-                      boxShadow: '0 20px 60px rgba(0,0,0,0.8)',
+                      boxShadow: '0 20px 60px rgba(5,90,103,0.18)',
                       overflow: 'hidden',
                       opacity: dropdownOpen ? 1 : 0,
                       pointerEvents: dropdownOpen ? 'all' : 'none',
@@ -189,7 +189,7 @@ export default function Navbar() {
                           display: 'block',
                           padding: '0.85rem 1.25rem',
                           fontFamily: 'var(--font-body)',
-                          fontSize: '0.78rem',
+                          fontSize: '0.88rem',
                           fontWeight: 400,
                           letterSpacing: '0.06em',
                           color: 'var(--color-muted-light)',
@@ -200,8 +200,8 @@ export default function Navbar() {
                           transition: 'all 0.2s ease',
                         }}
                         onMouseEnter={(e) => {
-                          e.currentTarget.style.color = 'var(--color-gold)'
-                          e.currentTarget.style.background = 'rgba(201,168,76,0.06)'
+                          e.currentTarget.style.color = 'var(--color-teal-dark)'
+                          e.currentTarget.style.background = 'rgba(220,159,37,0.10)'
                           e.currentTarget.style.paddingLeft = '1.5rem'
                         }}
                         onMouseLeave={(e) => {
@@ -230,7 +230,7 @@ export default function Navbar() {
                     textDecoration: 'none',
                     transition: 'color 0.3s ease',
                   }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-white)'}
+                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-teal)'}
                   onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-muted-light)'}
                 >
                   {link.label}
@@ -242,7 +242,7 @@ export default function Navbar() {
             <Link
               href="/consultation"
               className="btn-primary"
-              style={{ marginLeft: '1rem', padding: '0.6rem 1.5rem', fontSize: '0.72rem' }}
+              style={{ marginLeft: '1rem', padding: '0.6rem 1.5rem', fontSize: '0.82rem' }}
             >
               Book Consultation
             </Link>
@@ -296,7 +296,7 @@ export default function Navbar() {
           position: 'fixed',
           inset: 0,
           zIndex: 999,
-          background: 'rgba(8,8,8,0.98)',
+          background: 'rgba(245,245,245,0.98)',
           backdropFilter: 'blur(16px)',
           display: 'flex',
           flexDirection: 'column',

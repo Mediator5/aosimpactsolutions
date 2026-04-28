@@ -99,7 +99,7 @@ export default function PricingSection() {
         top: '50%', left: '50%',
         transform: 'translate(-50%, -50%)',
         width: '900px', height: '500px',
-        background: 'radial-gradient(ellipse, rgba(201,168,76,0.05) 0%, transparent 65%)',
+        background: 'radial-gradient(ellipse, rgba(220,159,37,0.10) 0%, transparent 65%)',
         pointerEvents: 'none',
       }} />
 
@@ -109,7 +109,7 @@ export default function PricingSection() {
         <div style={{ textAlign: 'center', marginBottom: '4.5rem' }}>
           <span style={{
             fontFamily: 'var(--font-body)',
-            fontSize: '0.7rem',
+            fontSize: '0.8rem',
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -125,7 +125,7 @@ export default function PricingSection() {
             lineHeight: 1.2,
           }}>
             Flexible Options Designed{' '}
-            <em style={{ color: 'var(--color-gold-light)' }}>For Your Timeline</em>
+            <em style={{ color: 'var(--color-teal-dark)' }}>For Your Timeline</em>
           </h2>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -158,14 +158,14 @@ export default function PricingSection() {
                 style={{
                   background: isGold ? 'var(--color-surface-2)' : 'var(--color-surface-2)',
                   border: isGold
-                    ? '1px solid rgba(201,168,76,0.5)'
+                    ? '1px solid rgba(220,159,37,0.6)'
                     : '1px solid var(--color-border)',
                   borderRadius: 'var(--radius-lg)',
                   overflow: 'hidden',
                   opacity: 0,
                   transform: 'translateY(24px)',
                   transition: 'opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease',
-                  boxShadow: isGold ? 'var(--shadow-gold)' : 'none',
+                  boxShadow: isGold ? 'var(--shadow-gold)' : 'var(--shadow-card)',
                   position: 'relative',
                 }}
               >
@@ -173,7 +173,7 @@ export default function PricingSection() {
                 {isGold && (
                   <div style={{
                     height: '3px',
-                    background: 'linear-gradient(90deg, var(--color-gold-dark), var(--color-gold-light), var(--color-gold-dark))',
+                    background: 'linear-gradient(90deg, var(--color-teal-dark), var(--color-gold), var(--color-teal-dark))',
                   }} />
                 )}
 
@@ -185,15 +185,15 @@ export default function PricingSection() {
                     right: '1.25rem',
                     padding: '0.25rem 0.75rem',
                     background: isGold
-                      ? 'linear-gradient(135deg, var(--color-gold), var(--color-gold-dark))'
-                      : 'rgba(201,168,76,0.15)',
+                      ? 'linear-gradient(135deg, var(--color-gold), var(--color-teal-dark))'
+                      : 'rgba(220,159,37,0.20)',
                     borderRadius: '100px',
                     fontFamily: 'var(--font-body)',
-                    fontSize: '0.62rem',
+                    fontSize: '0.74rem',
                     fontWeight: 700,
                     letterSpacing: '0.12em',
                     textTransform: 'uppercase',
-                    color: isGold ? 'var(--color-black)' : 'var(--color-gold)',
+                    color: isGold ? '#FFFFFF' : 'var(--color-teal-dark)',
                   }}>
                     {prog.badge}
                   </div>
@@ -246,14 +246,14 @@ export default function PricingSection() {
                     fontFamily: 'var(--font-heading)',
                     fontSize: '1.6rem',
                     fontWeight: 600,
-                    color: 'var(--color-gold)',
+                    color: 'var(--color-teal-dark)',
                     marginBottom: '0.25rem',
                   }}>
                     {prog.investment}
                   </div>
                   <div style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.85rem',
                     color: 'var(--color-muted)',
                     marginBottom: '0.5rem',
                   }}>
@@ -266,19 +266,19 @@ export default function PricingSection() {
                     alignItems: 'center',
                     gap: '0.5rem',
                     padding: '0.35rem 0.85rem',
-                    background: 'rgba(201,168,76,0.07)',
-                    border: '1px solid rgba(201,168,76,0.15)',
+                    background: 'rgba(220,159,37,0.12)',
+                    border: '1px solid rgba(220,159,37,0.30)',
                     borderRadius: '100px',
                     marginTop: '0.5rem',
                   }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="1.5">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-teal-dark)" strokeWidth="1.5">
                       <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
                     </svg>
                     <span style={{
                       fontFamily: 'var(--font-body)',
-                      fontSize: '0.72rem',
-                      fontWeight: 500,
-                      color: 'var(--color-gold-light)',
+                      fontSize: '0.82rem',
+                      fontWeight: 600,
+                      color: 'var(--color-teal-dark)',
                     }}>
                       {prog.timeline}
                     </span>
@@ -291,11 +291,11 @@ export default function PricingSection() {
                     gap: '0.5rem',
                     marginTop: '1.25rem',
                     fontFamily: 'var(--font-body)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.85rem',
                     fontWeight: 600,
                     letterSpacing: '0.1em',
                     textTransform: 'uppercase',
-                    color: 'var(--color-gold)',
+                    color: 'var(--color-teal-dark)',
                   }}>
                     {isOpen ? 'Hide Details' : 'View Details'}
                     <svg
@@ -325,7 +325,7 @@ export default function PricingSection() {
                   }}>
                     <p style={{
                       fontFamily: 'var(--font-body)',
-                      fontSize: '0.7rem',
+                      fontSize: '0.8rem',
                       fontWeight: 700,
                       letterSpacing: '0.15em',
                       textTransform: 'uppercase',
@@ -358,14 +358,14 @@ export default function PricingSection() {
                     {prog.note && (
                       <p style={{
                         fontFamily: 'var(--font-body)',
-                        fontSize: '0.72rem',
+                        fontSize: '0.82rem',
                         fontWeight: 300,
                         color: 'var(--color-muted)',
                         fontStyle: 'italic',
                         lineHeight: 1.7,
                         padding: '0.75rem',
-                        background: 'rgba(201,168,76,0.04)',
-                        border: '1px solid rgba(201,168,76,0.1)',
+                        background: 'rgba(220,159,37,0.08)',
+                        border: '1px solid rgba(220,159,37,0.20)',
                         borderRadius: 'var(--radius-sm)',
                         marginBottom: '1.5rem',
                       }}>
@@ -391,7 +391,7 @@ export default function PricingSection() {
         <p style={{
           textAlign: 'center',
           fontFamily: 'var(--font-body)',
-          fontSize: '0.78rem',
+          fontSize: '0.88rem',
           fontWeight: 300,
           color: 'var(--color-muted)',
           marginTop: '2.5rem',

@@ -97,7 +97,7 @@ export default function ConsultationPage() {
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(ellipse 70% 60% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 70% 60% at 50% 0%, rgba(220,159,37,0.12) 0%, transparent 70%)',
             pointerEvents: 'none',
           }} />
 
@@ -105,14 +105,14 @@ export default function ConsultationPage() {
           <div style={{
             position: 'absolute', top: '5rem', left: '4rem',
             width: '60px', height: '60px',
-            borderTop: '1px solid rgba(201,168,76,0.2)',
-            borderLeft: '1px solid rgba(201,168,76,0.2)',
+            borderTop: '1px solid rgba(220,159,37,0.30)',
+            borderLeft: '1px solid rgba(220,159,37,0.30)',
           }} />
           <div style={{
             position: 'absolute', top: '5rem', right: '4rem',
             width: '60px', height: '60px',
-            borderTop: '1px solid rgba(201,168,76,0.2)',
-            borderRight: '1px solid rgba(201,168,76,0.2)',
+            borderTop: '1px solid rgba(220,159,37,0.30)',
+            borderRight: '1px solid rgba(220,159,37,0.30)',
           }} />
 
           <div style={{ position: 'relative', zIndex: 1 }}>
@@ -121,7 +121,7 @@ export default function ConsultationPage() {
               alignItems: 'center',
               gap: '0.75rem',
               padding: '0.4rem 1.25rem',
-              border: '1px solid rgba(201,168,76,0.25)',
+              border: '1px solid rgba(220,159,37,0.35)',
               borderRadius: '100px',
               marginBottom: '1.75rem',
             }}>
@@ -133,11 +133,11 @@ export default function ConsultationPage() {
               }} />
               <span style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: '0.7rem',
+                fontSize: '0.8rem',
                 fontWeight: 600,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                color: 'var(--color-gold-light)',
+                color: 'var(--color-teal-dark)',
               }}>
                 Free Consultation
               </span>
@@ -213,7 +213,7 @@ export default function ConsultationPage() {
                     <div key={item.step} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                       <div style={{
                         width: '36px', height: '36px', borderRadius: '50%',
-                        border: '1px solid rgba(201,168,76,0.3)',
+                        border: '1px solid rgba(220,159,37,0.4)',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         flexShrink: 0,
                       }}>
@@ -234,7 +234,7 @@ export default function ConsultationPage() {
                         }}>{item.label}</p>
                         <p style={{
                           fontFamily: 'var(--font-body)',
-                          fontSize: '0.78rem',
+                          fontSize: '0.88rem',
                           fontWeight: 300,
                           color: 'var(--color-muted)',
                           lineHeight: 1.7,
@@ -248,17 +248,17 @@ export default function ConsultationPage() {
               {/* Contact info card */}
               <div style={{
                 background: 'var(--color-surface-2)',
-                border: '1px solid rgba(201,168,76,0.18)',
+                border: '1px solid rgba(220,159,37,0.28)',
                 borderRadius: 'var(--radius-lg)',
                 padding: '1.75rem 2rem',
               }}>
                 <p style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: '0.7rem',
+                  fontSize: '0.8rem',
                   fontWeight: 700,
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase',
-                  color: 'var(--color-gold)',
+                  color: 'var(--color-teal-dark)',
                   marginBottom: '1rem',
                 }}>Prefer to reach out directly?</p>
 
@@ -302,7 +302,7 @@ export default function ConsultationPage() {
                 }}>
                   <p style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: '0.7rem',
+                    fontSize: '0.8rem',
                     fontWeight: 600,
                     letterSpacing: '0.1em',
                     textTransform: 'uppercase',
@@ -319,8 +319,8 @@ export default function ConsultationPage() {
                       justifyContent: 'space-between',
                       marginBottom: '0.4rem',
                     }}>
-                      <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', fontWeight: 300, color: 'var(--color-muted)' }}>{h.day}</span>
-                      <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', fontWeight: 400, color: h.hours === 'Closed' ? 'var(--color-muted)' : 'var(--color-gold-light)' }}>{h.hours}</span>
+                      <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.88rem', fontWeight: 300, color: 'var(--color-muted)' }}>{h.day}</span>
+                      <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.88rem', fontWeight: 500, color: h.hours === 'Closed' ? 'var(--color-muted)' : 'var(--color-teal-dark)' }}>{h.hours}</span>
                     </div>
                   ))}
                 </div>
@@ -378,10 +378,10 @@ export default function ConsultationPage() {
                               padding: '0.45rem 1rem',
                               borderRadius: '100px',
                               border: `1px solid ${form.creditRange === range ? 'var(--color-gold)' : 'var(--color-border)'}`,
-                              background: form.creditRange === range ? 'rgba(201,168,76,0.12)' : 'transparent',
-                              color: form.creditRange === range ? 'var(--color-gold-light)' : 'var(--color-muted)',
+                              background: form.creditRange === range ? 'rgba(220,159,37,0.18)' : 'transparent',
+                              color: form.creditRange === range ? 'var(--color-teal-dark)' : 'var(--color-muted)',
                               fontFamily: 'var(--font-body)',
-                              fontSize: '0.78rem',
+                              fontSize: '0.88rem',
                               fontWeight: 400,
                               cursor: 'pointer',
                               transition: 'all 0.2s ease',
@@ -408,10 +408,10 @@ export default function ConsultationPage() {
                                 padding: '0.45rem 1rem',
                                 borderRadius: '100px',
                                 border: `1px solid ${selected ? 'var(--color-gold)' : 'var(--color-border)'}`,
-                                background: selected ? 'rgba(201,168,76,0.12)' : 'transparent',
-                                color: selected ? 'var(--color-gold-light)' : 'var(--color-muted)',
+                                background: selected ? 'rgba(220,159,37,0.18)' : 'transparent',
+                                color: selected ? 'var(--color-teal-dark)' : 'var(--color-muted)',
                                 fontFamily: 'var(--font-body)',
-                                fontSize: '0.78rem',
+                                fontSize: '0.88rem',
                                 fontWeight: 400,
                                 cursor: 'pointer',
                                 transition: 'all 0.2s ease',
@@ -420,7 +420,7 @@ export default function ConsultationPage() {
                                 gap: '0.4rem',
                               }}
                             >
-                              {selected && <span style={{ fontSize: '0.65rem' }}>✓</span>}
+                              {selected && <span style={{ fontSize: '0.76rem' }}>✓</span>}
                               {goal}
                             </button>
                           )
@@ -460,7 +460,7 @@ export default function ConsultationPage() {
                             fontFamily: 'var(--font-body)',
                             fontSize: '0.82rem',
                             fontWeight: 300,
-                            color: form.preferredContact === method ? 'var(--color-gold-light)' : 'var(--color-muted)',
+                            color: form.preferredContact === method ? 'var(--color-teal-dark)' : 'var(--color-muted)',
                             transition: 'color 0.2s ease',
                           }}>
                             <input
@@ -543,8 +543,8 @@ export default function ConsultationPage() {
                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', justifyContent: 'center' }}>
                           <span style={{
                             width: '14px', height: '14px',
-                            border: '2px solid rgba(0,0,0,0.3)',
-                            borderTopColor: 'var(--color-black)',
+                            border: '2px solid rgba(255,255,255,0.4)',
+                            borderTopColor: '#FFFFFF',
                             borderRadius: '50%',
                             display: 'inline-block',
                             animation: 'spin 0.7s linear infinite',
@@ -558,7 +558,7 @@ export default function ConsultationPage() {
 
                     <p style={{
                       fontFamily: 'var(--font-body)',
-                      fontSize: '0.72rem',
+                      fontSize: '0.82rem',
                       fontWeight: 300,
                       color: 'var(--color-muted)',
                       textAlign: 'center',
@@ -596,7 +596,7 @@ function SuccessState() {
   return (
     <div style={{
       background: 'var(--color-surface-2)',
-      border: '1px solid rgba(201,168,76,0.3)',
+      border: '1px solid rgba(220,159,37,0.4)',
       borderRadius: 'var(--radius-xl)',
       padding: '4rem 2.5rem',
       textAlign: 'center',
@@ -605,8 +605,8 @@ function SuccessState() {
       <div style={{
         width: '72px', height: '72px',
         borderRadius: '50%',
-        background: 'rgba(201,168,76,0.1)',
-        border: '1px solid rgba(201,168,76,0.4)',
+        background: 'rgba(220,159,37,0.15)',
+        border: '1px solid rgba(220,159,37,0.5)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         margin: '0 auto 1.75rem',
         fontSize: '1.75rem',
@@ -632,7 +632,7 @@ function SuccessState() {
         Thank you for reaching out. Our team will review your information
         and contact you within 1 business day to schedule your consultation.
       </p>
-      <div style={{ height: '1px', background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent)', margin: '2rem 0' }} />
+      <div style={{ height: '1px', background: 'linear-gradient(90deg, transparent, rgba(220,159,37,0.30), transparent)', margin: '2rem 0' }} />
       <p style={{
         fontFamily: 'var(--font-body)',
         fontSize: '0.8rem',
@@ -654,11 +654,11 @@ function FormSectionTitle({ children }) {
   return (
     <h3 style={{
       fontFamily: 'var(--font-body)',
-      fontSize: '0.7rem',
+      fontSize: '0.8rem',
       fontWeight: 700,
       letterSpacing: '0.18em',
       textTransform: 'uppercase',
-      color: 'var(--color-gold)',
+      color: 'var(--color-teal-dark)',
       marginBottom: '1.25rem',
     }}>
       {children}
@@ -670,7 +670,7 @@ function GoldDivider() {
   return (
     <div style={{
       height: '1px',
-      background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent)',
+      background: 'linear-gradient(90deg, transparent, rgba(220,159,37,0.22), transparent)',
       margin: '2rem 0',
     }} />
   )
@@ -696,7 +696,7 @@ function Field({ label, name, type = 'text', value, onChange, placeholder, requi
 const labelStyle = {
   display: 'block',
   fontFamily: 'var(--font-body)',
-  fontSize: '0.68rem',
+  fontSize: '0.78rem',
   fontWeight: 700,
   letterSpacing: '0.14em',
   textTransform: 'uppercase',

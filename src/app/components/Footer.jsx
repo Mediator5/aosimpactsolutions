@@ -55,7 +55,7 @@ export default function Footer() {
       <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
         width: '60%', height: '1px', background: 'linear-gradient(90deg, transparent, var(--color-gold), transparent)' }} />
       <div style={{ position: 'absolute', bottom: '-100px', right: '-100px', width: '400px', height: '400px',
-        borderRadius: '50%', background: 'radial-gradient(circle, rgba(201,168,76,0.04) 0%, transparent 70%)', pointerEvents: 'none' }} />
+        borderRadius: '50%', background: 'radial-gradient(circle, rgba(220,159,37,0.10) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto', padding: '4rem 1.5rem 2rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px,1fr))', gap: '3rem', marginBottom: '3rem' }}>
@@ -64,13 +64,13 @@ export default function Footer() {
           <div>
             <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', flexDirection: 'column', lineHeight: 1, marginBottom: '1.25rem' }}>
               <span style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', fontWeight: 600,
-                background: 'linear-gradient(135deg, #E2C27D 0%, #C9A84C 50%, #A07C2D 100%)',
+                background: 'linear-gradient(135deg, #F8CE60 0%, #DC9F25 50%, #055A67 100%)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', letterSpacing: '0.05em' }}>AOS</span>
-              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.55rem', fontWeight: 600,
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 600,
                 letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--color-muted)' }}>Impact Solutions</span>
             </Link>
             <p style={{ fontFamily: 'var(--font-heading)', fontSize: '1.1rem', fontStyle: 'italic',
-              color: 'var(--color-gold)', marginBottom: '1rem', lineHeight: 1.4 }}>
+              color: 'var(--color-teal-dark)', marginBottom: '1rem', lineHeight: 1.4 }}>
               Transforming Credit.<br />Creating Opportunity.
             </p>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 300,
@@ -82,7 +82,7 @@ export default function Footer() {
                 <a key={s.label} href={s.href} aria-label={s.label} target="_blank" rel="noopener noreferrer"
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '38px', height: '38px',
                     border: '1px solid var(--color-border)', borderRadius: 'var(--radius-sm)', color: 'var(--color-muted)', transition: 'all 0.3s ease' }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color='var(--color-gold)'; e.currentTarget.style.borderColor='var(--color-gold)'; e.currentTarget.style.background='rgba(201,168,76,0.08)' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color='var(--color-teal-dark)'; e.currentTarget.style.borderColor='var(--color-gold)'; e.currentTarget.style.background='rgba(220,159,37,0.12)' }}
                   onMouseLeave={(e) => { e.currentTarget.style.color='var(--color-muted)'; e.currentTarget.style.borderColor='var(--color-border)'; e.currentTarget.style.background='transparent' }}>
                   {s.icon}
                 </a>
@@ -97,9 +97,9 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {footerLinks.company.map((l) => (
                 <li key={l.label}><Link href={l.href} style={lnk}
-                  onMouseEnter={(e) => e.currentTarget.style.color='var(--color-gold)'}
+                  onMouseEnter={(e) => e.currentTarget.style.color='var(--color-teal-dark)'}
                   onMouseLeave={(e) => e.currentTarget.style.color='var(--color-muted)'}>
-                  <span style={{ color: 'var(--color-gold-dark)', marginRight: '0.5rem' }}>›</span>{l.label}
+                  <span style={{ color: 'var(--color-gold)', marginRight: '0.5rem' }}>›</span>{l.label}
                 </Link></li>
               ))}
             </ul>
@@ -112,9 +112,9 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {footerLinks.services.map((l) => (
                 <li key={l.label}><Link href={l.href} style={lnk}
-                  onMouseEnter={(e) => e.currentTarget.style.color='var(--color-gold)'}
+                  onMouseEnter={(e) => e.currentTarget.style.color='var(--color-teal-dark)'}
                   onMouseLeave={(e) => e.currentTarget.style.color='var(--color-muted)'}>
-                  <span style={{ color: 'var(--color-gold-dark)', marginRight: '0.5rem' }}>›</span>{l.label}
+                  <span style={{ color: 'var(--color-gold)', marginRight: '0.5rem' }}>›</span>{l.label}
                 </Link></li>
               ))}
             </ul>
@@ -127,18 +127,18 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {businessHours.map((b) => (
                 <li key={b.day} style={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
-                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem', fontWeight: 600,
+                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', fontWeight: 600,
                     letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-muted-light)' }}>{b.day}</span>
-                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 300,
-                    color: b.hours === 'Closed' ? 'var(--color-muted)' : 'var(--color-gold-light)' }}>{b.hours}</span>
+                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 400,
+                    color: b.hours === 'Closed' ? 'var(--color-muted)' : 'var(--color-teal-dark)' }}>{b.hours}</span>
                 </li>
               ))}
             </ul>
             <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
               {['info@aosimpactsolutions.com','levelupnow800@gmail.com','Jasmine@aosimpactsolutions.com'].map((email) => (
-                <a key={email} href={`mailto:${email}`} style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem',
+                <a key={email} href={`mailto:${email}`} style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem',
                   fontWeight: 300, color: 'var(--color-muted)', textDecoration: 'none', transition: 'color 0.2s ease' }}
-                  onMouseEnter={(e) => e.currentTarget.style.color='var(--color-gold)'}
+                  onMouseEnter={(e) => e.currentTarget.style.color='var(--color-teal-dark)'}
                   onMouseLeave={(e) => e.currentTarget.style.color='var(--color-muted)'}>{email}</a>
               ))}
             </div>
@@ -148,21 +148,21 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem',
           display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem', fontWeight: 300,
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', fontWeight: 300,
             color: 'var(--color-muted)', letterSpacing: '0.04em' }}>
             © {year} AOS Impact Solutions. All rights reserved.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
             {footerLinks.legal.map((l) => (
-              <Link key={l.label} href={l.href} style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem',
+              <Link key={l.label} href={l.href} style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem',
                 fontWeight: 300, letterSpacing: '0.06em', color: 'var(--color-muted)', textDecoration: 'none', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => e.currentTarget.style.color='var(--color-gold)'}
+                onMouseEnter={(e) => e.currentTarget.style.color='var(--color-teal-dark)'}
                 onMouseLeave={(e) => e.currentTarget.style.color='var(--color-muted)'}>{l.label}</Link>
             ))}
           </div>
         </div>
 
-        <p style={{ marginTop: '1.5rem', fontFamily: 'var(--font-body)', fontSize: '0.68rem', fontWeight: 300,
+        <p style={{ marginTop: '1.5rem', fontFamily: 'var(--font-body)', fontSize: '0.78rem', fontWeight: 300,
           color: 'var(--color-muted)', lineHeight: 1.7, opacity: 0.7, maxWidth: '800px' }}>
           <strong style={{ color: 'var(--color-muted-light)', fontWeight: 500 }}>Disclaimer:</strong>{' '}
           AOS Impact Solutions is not a law firm and does not provide legal advice. Results may vary.
@@ -174,7 +174,7 @@ export default function Footer() {
   )
 }
 
-const colH = { fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 700,
-  letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-gold)', marginBottom: '0.75rem' }
+const colH = { fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 700,
+  letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-teal-dark)', marginBottom: '0.75rem' }
 const lnk = { fontFamily: 'var(--font-body)', fontSize: '0.82rem', fontWeight: 300, color: 'var(--color-muted)',
   textDecoration: 'none', display: 'flex', alignItems: 'center', transition: 'color 0.2s ease', cursor: 'pointer' }

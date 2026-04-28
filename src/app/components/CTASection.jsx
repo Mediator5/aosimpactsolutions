@@ -6,15 +6,15 @@ export default function CTASection() {
       {/* Unsplash: aspirational city / financial freedom */}
       <div style={{ position: 'absolute', inset: 0,
         backgroundImage: 'url(https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=80&auto=format&fit=crop)',
-        backgroundSize: 'cover', backgroundPosition: 'center 60%', opacity: 0.14, filter: 'saturate(0.4)', pointerEvents: 'none' }} />
+        backgroundSize: 'cover', backgroundPosition: 'center 60%', opacity: 0.10, filter: 'saturate(0.4)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', inset: 0,
-        background: 'linear-gradient(180deg, rgba(8,8,8,0.88) 0%, rgba(8,8,8,0.6) 50%, rgba(8,8,8,0.92) 100%)', pointerEvents: 'none' }} />
+        background: 'linear-gradient(180deg, rgba(245,245,245,0.88) 0%, rgba(245,245,245,0.6) 50%, rgba(245,245,245,0.92) 100%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(201,168,76,0.07) 0%, transparent 65%)', pointerEvents: 'none' }} />
+        background: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(220,159,37,0.10) 0%, transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', top: '3rem', left: '3rem', width: '80px', height: '80px',
-        borderTop: '1px solid rgba(201,168,76,0.2)', borderLeft: '1px solid rgba(201,168,76,0.2)', pointerEvents: 'none' }} />
+        borderTop: '1px solid rgba(5,90,103,0.30)', borderLeft: '1px solid rgba(5,90,103,0.30)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '3rem', right: '3rem', width: '80px', height: '80px',
-        borderBottom: '1px solid rgba(201,168,76,0.2)', borderRight: '1px solid rgba(201,168,76,0.2)', pointerEvents: 'none' }} />
+        borderBottom: '1px solid rgba(5,90,103,0.30)', borderRight: '1px solid rgba(5,90,103,0.30)', pointerEvents: 'none' }} />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '2rem' }}>
@@ -47,7 +47,7 @@ export default function CTASection() {
           </Link>
         </div>
 
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', fontWeight: 300, color: 'var(--color-muted)' }}>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.88rem', fontWeight: 300, color: 'var(--color-muted)' }}>
           Questions? Email us at{' '}
           <a href="mailto:info@aosimpactsolutions.com" style={{ color: 'var(--color-gold)', textDecoration: 'none', fontWeight: 400 }}>
             info@aosimpactsolutions.com

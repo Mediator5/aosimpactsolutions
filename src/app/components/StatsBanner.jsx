@@ -38,24 +38,24 @@ export default function StatsBanner() {
       {/* Unsplash: luxury credit card close-up */}
       <div style={{ position: 'absolute', inset: 0,
         backgroundImage: 'url(https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80&auto=format&fit=crop)',
-        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.15, filter: 'saturate(0.5)', pointerEvents: 'none' }} />
+        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.08, filter: 'saturate(0.5)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', inset: 0,
-        background: 'linear-gradient(90deg, rgba(8,8,8,0.92), rgba(8,8,8,0.7), rgba(8,8,8,0.92))', pointerEvents: 'none' }} />
+        background: 'linear-gradient(90deg, rgba(245,245,245,0.92), rgba(245,245,245,0.7), rgba(245,245,245,0.92))', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '1px',
-        background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)' }} />
+        background: 'linear-gradient(90deg, transparent, rgba(220,159,37,0.55), transparent)' }} />
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px',
-        background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)' }} />
+        background: 'linear-gradient(90deg, transparent, rgba(220,159,37,0.55), transparent)' }} />
 
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto', position: 'relative', zIndex: 1,
         display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px,1fr))', gap: '2rem', textAlign: 'center' }}>
         {stats.map((s, i) => (
           <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem' }}>
             <div style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', fontWeight: 600,
-              background: 'linear-gradient(135deg, #E2C27D, #C9A84C)', WebkitBackgroundClip: 'text',
+              background: 'linear-gradient(135deg, #DC9F25, #055A67)', WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent', backgroundClip: 'text', lineHeight: 1 }}>
               <CountUp target={s.value} suffix={s.suffix} active={active} />
             </div>
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 600,
+            <div style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 600,
               letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--color-muted)' }}>{s.label}</div>
           </div>
         ))}

@@ -26,17 +26,17 @@ export function NegativeItemsSection() {
         backgroundImage: 'url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1400&q=70&auto=format&fit=crop)',
         backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.035, filter: 'saturate(0)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '1px',
-        background: 'linear-gradient(90deg, transparent 10%, rgba(201,168,76,0.2) 50%, transparent 90%)' }} />
+        background: 'linear-gradient(90deg, transparent 10%, rgba(220,159,37,0.35) 50%, transparent 90%)' }} />
 
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px,1fr))', gap: '5rem', alignItems: 'center' }}>
           <div>
-            <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 700,
+            <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 700,
               letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-gold)' }}>What We Challenge</span>
             <div className="gold-divider-left" style={{ marginTop: '0.75rem', marginBottom: '1.25rem' }} />
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem,4vw,3rem)', fontWeight: 400,
               color: 'var(--color-white)', lineHeight: 1.2, marginBottom: '1.25rem' }}>
-              Negative Items We{' '}<em style={{ color: 'var(--color-gold-light)' }}>Help Remove</em>
+              Negative Items We{' '}<em style={{ color: 'var(--color-teal-dark)' }}>Help Remove</em>
             </h2>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', fontWeight: 300,
               color: 'var(--color-muted)', lineHeight: 1.9, marginBottom: '2rem' }}>
@@ -54,9 +54,9 @@ export function NegativeItemsSection() {
                 color: 'var(--color-muted-light)', opacity: 0, transform: 'scale(0.9)',
                 transition: 'opacity 0.4s ease, transform 0.4s ease, border-color 0.25s, color 0.25s',
                 cursor: 'default', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor='rgba(201,168,76,0.4)'; e.currentTarget.style.color='var(--color-gold-light)' }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor='rgba(220,159,37,0.5)'; e.currentTarget.style.color='var(--color-teal-dark)' }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor='var(--color-border)'; e.currentTarget.style.color='var(--color-muted-light)' }}>
-                <span style={{ color: 'var(--color-gold)', fontSize: '0.7rem' }}>✦</span>{item}
+                <span style={{ color: 'var(--color-gold)', fontSize: '0.8rem' }}>✦</span>{item}
               </div>
             ))}
           </div>
@@ -85,16 +85,16 @@ export function WhoWeHelpSection() {
         backgroundImage: 'url(https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=70&auto=format&fit=crop)',
         backgroundSize: 'cover', backgroundPosition: 'center 30%', opacity: 0.07, filter: 'saturate(0.3)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,168,76,0.04) 0%, transparent 70%)', pointerEvents: 'none' }} />
+        background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(220,159,37,0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 700,
+          <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 700,
             letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-gold)' }}>Who We Help</span>
           <div className="gold-divider" style={{ marginTop: '0.75rem' }} />
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem,4vw,3rem)', fontWeight: 400,
             color: 'var(--color-white)', marginTop: '1rem', lineHeight: 1.2 }}>
-            We Work With Individuals Who Want{' '}<em style={{ color: 'var(--color-gold-light)' }}>More From Life</em>
+            We Work With Individuals Who Want{' '}<em style={{ color: 'var(--color-teal-dark)' }}>More From Life</em>
           </h2>
         </div>
 
@@ -102,9 +102,9 @@ export function WhoWeHelpSection() {
           {helpItems.map((item, i) => (
             <div key={i} style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
               borderRadius: 'var(--radius-lg)', padding: '2rem 1.5rem', textAlign: 'center',
-              transition: 'all 0.3s ease', cursor: 'default' }}
-              onMouseEnter={(e) => { e.currentTarget.style.borderColor='rgba(201,168,76,0.35)'; e.currentTarget.style.transform='translateY(-4px)'; e.currentTarget.style.boxShadow='var(--shadow-gold)' }}
-              onMouseLeave={(e) => { e.currentTarget.style.borderColor='var(--color-border)'; e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='none' }}>
+              transition: 'all 0.3s ease', cursor: 'default', boxShadow: 'var(--shadow-card)' }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor='rgba(220,159,37,0.45)'; e.currentTarget.style.transform='translateY(-4px)'; e.currentTarget.style.boxShadow='var(--shadow-gold)' }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor='var(--color-border)'; e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='var(--shadow-card)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{item.icon}</div>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', fontWeight: 500,
                 letterSpacing: '0.04em', color: 'var(--color-muted-light)' }}>{item.label}</p>
@@ -113,9 +113,10 @@ export function WhoWeHelpSection() {
         </div>
 
         {/* CTA strip */}
-        <div style={{ background: 'var(--color-surface-2)', border: '1px solid rgba(201,168,76,0.2)',
+        <div style={{ background: 'var(--color-surface-2)', border: '1px solid rgba(220,159,37,0.3)',
           borderRadius: 'var(--radius-xl)', padding: '2.5rem 3rem', display: 'flex',
-          flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem' }}>
+          flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem',
+          boxShadow: 'var(--shadow-card)' }}>
           <div>
             <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.6rem', fontWeight: 400,
               color: 'var(--color-white)', marginBottom: '0.4rem' }}>Ready to take control of your credit?</h3>
@@ -151,12 +152,12 @@ export function FAQSection() {
     <section id="faq" style={{ background: 'var(--color-surface)', padding: '7rem 1.5rem', position: 'relative' }}>
       <div style={{ maxWidth: '780px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 700,
+          <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', fontWeight: 700,
             letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-gold)' }}>FAQ</span>
           <div className="gold-divider" style={{ marginTop: '0.75rem' }} />
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem,4vw,3rem)', fontWeight: 400,
             color: 'var(--color-white)', marginTop: '1rem' }}>
-            Frequently Asked <em style={{ color: 'var(--color-gold-light)' }}>Questions</em>
+            Frequently Asked <em style={{ color: 'var(--color-teal-dark)' }}>Questions</em>
           </h2>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -164,17 +165,18 @@ export function FAQSection() {
             const isOpen = openIndex === i
             return (
               <div key={i} style={{ background: 'var(--color-surface-2)',
-                border: `1px solid ${isOpen ? 'rgba(201,168,76,0.3)' : 'var(--color-border)'}`,
-                borderRadius: 'var(--radius-md)', overflow: 'hidden', transition: 'border-color 0.3s ease' }}>
+                border: `1px solid ${isOpen ? 'rgba(220,159,37,0.45)' : 'var(--color-border)'}`,
+                borderRadius: 'var(--radius-md)', overflow: 'hidden', transition: 'border-color 0.3s ease',
+                boxShadow: 'var(--shadow-card)' }}>
                 <button onClick={() => setOpenIndex(isOpen ? null : i)} style={{ width: '100%',
                   padding: '1.25rem 1.5rem', background: 'transparent', border: 'none', cursor: 'pointer',
                   display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', textAlign: 'left' }}>
                   <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', fontWeight: 500,
-                    color: isOpen ? 'var(--color-gold-light)' : 'var(--color-white)', lineHeight: 1.5, transition: 'color 0.2s ease' }}>{faq.q}</span>
+                    color: isOpen ? 'var(--color-teal-dark)' : 'var(--color-white)', lineHeight: 1.5, transition: 'color 0.2s ease' }}>{faq.q}</span>
                   <div style={{ width: '28px', height: '28px', borderRadius: '50%',
                     border: `1px solid ${isOpen ? 'var(--color-gold)' : 'var(--color-border)'}`,
                     display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-                    transition: 'all 0.3s ease', background: isOpen ? 'rgba(201,168,76,0.1)' : 'transparent' }}>
+                    transition: 'all 0.3s ease', background: isOpen ? 'rgba(220,159,37,0.18)' : 'transparent' }}>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                       style={{ transform: isOpen ? 'rotate(45deg)' : 'rotate(0)', transition: 'transform 0.3s ease',
                         stroke: isOpen ? 'var(--color-gold)' : 'var(--color-muted)' }}>

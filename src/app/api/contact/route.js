@@ -125,23 +125,26 @@ function buildEnrollmentEmail(data) {
 /* ─────────────────────────────────────────
    HTML email template helpers
 ───────────────────────────────────────── */
-const gold = '#C9A84C'
-const dark = '#0F0F0F'
-const surface = '#1A1A1A'
-const border = '#2A2A2A'
-const white = '#FAFAFA'
-const muted = '#888888'
+const gold = '#DC9F25'
+const goldLight = '#F8CE60'
+const teal = '#0A91A6'
+const tealDark = '#055A67'
+const dark = '#FFFFFF'      // card background (light)
+const surface = '#FAFAFA'   // inset background
+const border = '#E0E0E0'
+const white = '#1A1A1A'     // primary text (dark)
+const muted = '#6B6B6B'
 
 function emailWrapper(content) {
   return `
   <!DOCTYPE html>
   <html>
   <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-  <body style="margin:0;padding:0;background:#080808;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-    <table width="100%" cellpadding="0" cellspacing="0" style="background:#080808;padding:40px 16px;">
+  <body style="margin:0;padding:0;background:#F5F5F5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F5F5;padding:40px 16px;">
       <tr><td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:${dark};border:1px solid ${border};border-radius:12px;overflow:hidden;">
-          <tr><td style="height:3px;background:linear-gradient(90deg,#A07C2D,#E2C27D,#A07C2D);"></td></tr>
+          <tr><td style="height:3px;background:linear-gradient(90deg,${tealDark},${goldLight},${tealDark});"></td></tr>
           <tr><td style="padding:32px 36px;">
             ${content}
           </td></tr>
@@ -161,8 +164,8 @@ function emailWrapper(content) {
 function header(title) {
   return `
     <div style="margin-bottom:28px;">
-      <p style="margin:0 0 4px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:${gold};">AOS Impact Solutions</p>
-      <h1 style="margin:0;font-size:24px;font-weight:300;color:${white};line-height:1.3;">${title}</h1>
+      <p style="margin:0 0 4px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:${tealDark};font-weight:700;">AOS Impact Solutions</p>
+      <h1 style="margin:0;font-size:24px;font-weight:400;color:${white};line-height:1.3;">${title}</h1>
       <div style="margin-top:12px;height:1px;background:linear-gradient(90deg,${gold},transparent);"></div>
     </div>`
 }
@@ -170,7 +173,7 @@ function header(title) {
 function section(title, content) {
   return `
     <div style="margin-bottom:24px;">
-      <p style="margin:0 0 12px;font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:${gold};">${title}</p>
+      <p style="margin:0 0 12px;font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:${tealDark};">${title}</p>
       <div style="background:${surface};border:1px solid ${border};border-radius:8px;padding:16px 20px;">
         ${content}
       </div>
